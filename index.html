@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كورس سوشال ميديا - التدريب الخاص</title>
-    
-    <!-- 1. تضمين سكربت تكرام باي -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔥 كورس سوشال ميديا - التدريب الخاص</title>
+    <!-- سكربت تكرم باي -->
     <script src="https://www.tekrams.com/tekram-pay.js" defer></script>
-
     <style>
+        /* ====== التصميم العصري والجذاب ====== */
         * {
             margin: 0;
             padding: 0;
@@ -25,95 +24,105 @@
             direction: rtl;
         }
         .card {
-            max-width: 650px;
+            max-width: 680px;
             width: 100%;
             background: #ffffff;
-            border-radius: 40px;
+            border-radius: 48px;
             padding: 50px 40px;
-            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.25);
             text-align: center;
-            transition: 0.3s;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
         }
         .badge {
-            background: #dbeafe;
-            color: #1e4f8a;
+            background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+            color: #1e3a6b;
             font-weight: 700;
             font-size: 13px;
-            padding: 6px 20px;
+            padding: 8px 24px;
             border-radius: 40px;
             display: inline-block;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             letter-spacing: 0.5px;
+            border: 1px solid #93b4d8;
         }
         h1 {
-            font-size: 30px;
-            font-weight: 800;
+            font-size: 34px;
+            font-weight: 900;
             color: #0b1e33;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            line-height: 1.2;
         }
         .subhead {
             font-size: 18px;
-            color: #4b5a6b;
+            color: #4a5b6e;
             line-height: 1.8;
             margin-bottom: 25px;
         }
         .price-tag {
-            background: #f0f4fe;
-            padding: 10px 35px;
+            background: linear-gradient(135deg, #f0f4fe, #e6edf8);
+            padding: 12px 40px;
             border-radius: 60px;
-            font-size: 32px;
-            font-weight: 800;
+            font-size: 36px;
+            font-weight: 900;
             color: #0a2a4a;
             display: inline-block;
             margin-bottom: 25px;
             border: 2px dashed #b3cbe0;
         }
         .price-tag small {
-            font-size: 18px;
-            font-weight: 400;
+            font-size: 20px;
+            font-weight: 500;
             color: #4b6a8a;
+            margin-right: 6px;
         }
         .features {
             list-style: none;
             text-align: right;
             margin-bottom: 35px;
-            padding: 0 10px;
+            padding: 0 5px;
         }
         .features li {
-            padding: 10px 0;
+            padding: 12px 0;
             border-bottom: 1px solid #f0f4f8;
             font-size: 17px;
             color: #1f2a3a;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
         }
         .features li::before {
             content: "✅";
-            font-size: 20px;
-            margin-left: 10px;
+            font-size: 22px;
+            margin-left: 12px;
         }
 
-        /* زر الدفع */
+        /* زر الدفع الرئيسي */
         .pay-button {
-            background: #0a2a4a;
+            background: linear-gradient(145deg, #0a2a4a, #1a3f62);
             color: white;
             border: none;
             width: 100%;
-            padding: 20px;
+            padding: 22px 20px;
             font-size: 22px;
-            font-weight: 700;
+            font-weight: 800;
             border-radius: 60px;
             cursor: pointer;
-            transition: 0.25s ease;
-            box-shadow: 0 10px 25px rgba(10, 42, 74, 0.3);
+            transition: all 0.25s ease;
+            box-shadow: 0 12px 28px rgba(10, 42, 74, 0.35);
+            letter-spacing: 0.3px;
         }
         .pay-button:hover {
-            background: #134a7a;
+            background: linear-gradient(145deg, #1a3f62, #2a5a82);
             transform: scale(1.02);
+            box-shadow: 0 16px 36px rgba(10, 42, 74, 0.45);
+        }
+        .pay-button:active {
+            transform: scale(0.97);
         }
         .pay-button span::before {
             content: "🔒 ";
+            font-size: 24px;
         }
 
         /* قسم النجاح (يظهر بعد الدفع) */
@@ -121,88 +130,151 @@
             display: none;
             background: #f0fdf4;
             border: 3px solid #22c55e;
-            border-radius: 24px;
-            padding: 30px 20px;
-            margin-top: 25px;
-            animation: fadeIn 0.5s ease;
+            border-radius: 28px;
+            padding: 32px 24px;
+            margin-top: 30px;
+            animation: fadeSlide 0.6s ease;
         }
         #successBox h2 {
             color: #166534;
-            font-size: 26px;
-            margin-bottom: 10px;
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 8px;
         }
         #successBox p {
             color: #14532d;
-            font-size: 16px;
+            font-size: 17px;
             margin-bottom: 20px;
         }
         .link-box {
             background: white;
-            padding: 15px 20px;
-            border-radius: 16px;
+            padding: 16px 20px;
+            border-radius: 18px;
             border: 1px solid #bbf7d0;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 15px;
             flex-wrap: wrap;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
         }
         .link-box span {
-            font-size: 18px;
-            font-weight: bold;
+            font-size: 19px;
+            font-weight: 700;
             color: #0a2a4a;
             word-break: break-all;
             flex: 1;
+            text-align: right;
         }
         .btn-copy {
             background: #0a2a4a;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 12px 22px;
             border-radius: 40px;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 15px;
             cursor: pointer;
             white-space: nowrap;
+            transition: 0.2s;
         }
         .btn-copy:hover {
             background: #134a7a;
+            transform: scale(1.03);
         }
         .btn-open {
             display: inline-block;
             background: #0a2a4a;
             color: white;
-            padding: 14px 30px;
+            padding: 16px 34px;
             border-radius: 60px;
             text-decoration: none;
-            font-weight: 700;
-            margin-top: 15px;
+            font-weight: 800;
+            font-size: 18px;
+            margin-top: 18px;
+            transition: 0.2s;
+            box-shadow: 0 6px 16px rgba(10, 42, 74, 0.25);
         }
         .btn-open:hover {
             background: #134a7a;
+            transform: scale(1.03);
         }
+        .note-save {
+            margin-top: 18px;
+            font-size: 15px;
+            color: #2d5a3b;
+            background: #e6f7ec;
+            padding: 10px 16px;
+            border-radius: 40px;
+            display: inline-block;
+        }
+
+        /* زر التحقق اليدوي (الطوارئ) */
+        .check-btn {
+            background: #eab308;
+            color: #1f2937;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 60px;
+            font-weight: 800;
+            font-size: 17px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+            box-shadow: 0 4px 12px rgba(234, 179, 8, 0.35);
+            width: 100%;
+        }
+        .check-btn:hover {
+            background: #facc15;
+            transform: scale(1.02);
+        }
+        .check-btn::before {
+            content: "🔍 ";
+        }
+
         .secure-note {
-            margin-top: 25px;
+            margin-top: 28px;
             color: #6f7e92;
             font-size: 14px;
             border-top: 1px solid #e4ecf3;
-            padding-top: 20px;
+            padding-top: 22px;
         }
         .secure-note i {
             background: #ecf3fa;
-            padding: 3px 10px;
+            padding: 4px 12px;
             border-radius: 30px;
+            font-style: normal;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+        @keyframes fadeSlide {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        @media (max-width: 480px) {
-            .card { padding: 25px 15px; }
-            h1 { font-size: 24px; }
-            .price-tag { font-size: 26px; }
-            .link-box span { font-size: 15px; }
+        @media (max-width: 550px) {
+            .card {
+                padding: 28px 16px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            .price-tag {
+                font-size: 28px;
+                padding: 8px 20px;
+            }
+            .link-box span {
+                font-size: 16px;
+            }
+            .pay-button {
+                font-size: 19px;
+                padding: 18px;
+            }
         }
     </style>
 </head>
@@ -211,26 +283,27 @@
 <div class="card">
 
     <!-- الشارة -->
-    <div class="badge">🔥 عرض حصري</div>
+    <div class="badge">🔥 عرض حصري ومحدود</div>
 
     <!-- العنوان -->
-    <h1>📘 التدريب الخاص<br>سوشال ميديا</h1>
+    <h1>📘 التدريب الخاص<br/>سوشال ميديا</h1>
     <p class="subhead">
-        احصل على المحتوى التدريبي الكامل + <strong>مجموعة الدعم المغلقة</strong> على تيلجرام.<br>
+        احصل على المحتوى التدريبي الكامل + <strong>مجموعة الدعم المغلقة</strong> على تيلجرام.<br/>
         بعد الدفع الناجح، سيظهر لك الرابط مباشرة ولن يختفي أبداً.
     </p>
 
     <!-- السعر -->
     <div class="price-tag">
-        $1.00 <small>فقط (للاختبار)</small>
+        $1.00 <small>للاختبار</small>
     </div>
 
     <!-- المميزات -->
     <ul class="features">
-        <li>محتوى تدريبي عملي حصري</li>
-        <li>دعم مباشر من المدرب</li>
-        <li>مجموعة خاصة على تيلجرام للطلاب</li>
-        <li>تحديثات مستمرة مجانية</li>
+        <li>محتوى تدريبي عملي وحصري</li>
+        <li>دعم مباشر من المدرب عبر التيلجرام</li>
+        <li>مجموعة خاصة للطلاب فقط</li>
+        <li>تحديثات مستمرة ومجانية</li>
+        <li>مدفوعات عبر البطاقات، PayPal، شام كاش</li>
     </ul>
 
     <!-- ====== قسم زر الدفع (يختفي بعد الدفع) ====== -->
@@ -238,46 +311,53 @@
         <button type="button" id="payBtn" class="pay-button">
             <span>دفع آمن ومشفر عبر تكرام باي</span>
         </button>
+        <p style="margin-top: 14px; font-size: 15px; color: #6b7e93;">
+            🔹 بعد الدفع، إذا لم يظهر الرابط تلقائياً، اضغط زر <strong>"تحقق من الدفع"</strong> بالأسفل.
+        </p>
     </div>
 
     <!-- ====== قسم الرابط السحري (يظهر بعد الدفع ويبقى للأبد) ====== -->
     <div id="successBox">
         <h2>🎉 تهانينا! تم الدفع بنجاح</h2>
-        <p>رابط مجموعتك الخاصة على تيلجرام جاهز. انسخه أو اضغط لفتحه:</p>
-        
+        <p>رابط مجموعتك الخاصة على تيلجرام جاهز. انسخه أو افتحه مباشرة:</p>
+
         <div class="link-box">
             <span id="telegramLinkDisplay">https://t.me/+Y-NBkaGjGiY1ODVk</span>
             <button class="btn-copy" onclick="copyLink()">📋 نسخ</button>
         </div>
-        
+
         <a href="https://t.me/+Y-NBkaGjGiY1ODVk" target="_blank" class="btn-open">
             🚀 افتح الرابط الآن
         </a>
-        
-        <p style="margin-top: 18px; font-size: 14px; color: #2d5a3b;">
-            ✅ تم حفظ الرابط في متصفحك. لو أغلقت الصفحة وفتحتها مرة أخرى، سيظهر لك الرابط تلقائياً.
-        </p>
+
+        <div class="note-save">
+            ✅ تم حفظ الرابط في متصفحك. لو أغلقت الصفحة وفتحتها مجدداً، سيظهر لك الرابط تلقائياً.
+        </div>
     </div>
+
+    <!-- ====== زر التحقق اليدوي (طوارئ) ====== -->
+    <button class="check-btn" onclick="checkPayment()">تحقق من الدفع</button>
 
     <!-- تذييل آمن -->
     <div class="secure-note">
-        <i>🔐</i> مدفوعات مشفرة بالكامل <i>⚡</i> فوري وآمن
+        <i>🔐</i> مدفوعات مشفرة بالكامل <i>⚡</i> فوري وآمن عبر
+        <span style="background:#eef2f6; padding:2px 10px; border-radius:30px;">تكرم باي</span>
     </div>
 </div>
 
-<!-- ================================================== -->
-<!-- ====== الكود السحري (JavaScript) ====== -->
+<!-- ============================================================== -->
+<!-- ====== الكود السحري (الجزء الأهم) ====== -->
 <script>
-    // ============================================================
-    // 1. بياناتك الثابتة (عدلها هنا لو أردت تغيير السعر أو الرابط)
-    // ============================================================
+    // ==============================================================
+    // 1. البيانات الثابتة (عدلها هنا عند الإطلاق الرسمي)
+    // ==============================================================
     const TELEGRAM_URL = "https://t.me/+Y-NBkaGjGiY1ODVk";   // رابط مجموعتك
-    const SELLER_ID   = "bf84c67c-e57f-496b-9094-6de2c42ae464"; // معرف البائع
-    const AMOUNT      = 1.00;   // ✅ ضع 49.99 هنا عند الإطلاق الرسمي
+    const SELLER_ID    = "bf84c67c-e57f-496b-9094-6de2c42ae464"; // معرف البائع
+    const AMOUNT       = 1.00;   // ✅ غيّر إلى 49.99 عند الإطلاق الرسمي
 
-    // ============================================================
+    // ==============================================================
     // 2. دوال العرض والنسخ
-    // ============================================================
+    // ==============================================================
     function showSuccessLink() {
         document.getElementById('paySection').style.display = 'none';
         document.getElementById('successBox').style.display = 'block';
@@ -287,10 +367,10 @@
 
     function copyLink() {
         const linkText = document.getElementById('telegramLinkDisplay').innerText;
-        if (navigator.clipboard) {
-            navigator.clipboard.writeText(linkText).then(() => {
-                alert('✅ تم نسخ الرابط بنجاح!');
-            }).catch(() => fallbackCopy(linkText));
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(linkText)
+                .then(() => alert('✅ تم نسخ الرابط بنجاح!'))
+                .catch(() => fallbackCopy(linkText));
         } else {
             fallbackCopy(linkText);
         }
@@ -299,54 +379,73 @@
     function fallbackCopy(text) {
         const textarea = document.createElement('textarea');
         textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.top = '-9999px';
         document.body.appendChild(textarea);
         textarea.select();
-        document.execCommand('copy');
+        try {
+            document.execCommand('copy');
+            alert('✅ تم نسخ الرابط!');
+        } catch (e) {
+            alert('❌ تعذر النسخ، انسخ الرابط يدوياً.');
+        }
         document.body.removeChild(textarea);
-        alert('✅ تم نسخ الرابط!');
     }
 
-    // ============================================================
-    // 3. التحقق عند تحميل الصفحة (الأهم)
-    // ============================================================
+    // ==============================================================
+    // 3. التحقق اليدوي (زر الطوارئ)
+    // ==============================================================
+    function checkPayment() {
+        if (localStorage.getItem('course_paid') === 'true') {
+            showSuccessLink();
+            alert('✅ تم العثور على دفعة سابقة! الرابط جاهز.');
+        } else {
+            alert('❌ لم يتم العثور على دفعة مسجلة. تأكد من إتمام الدفع أولاً، ثم اضغط "تحقق" مرة أخرى.');
+        }
+    }
+
+    // ==============================================================
+    // 4. التحقق التلقائي عند تحميل الصفحة (طبقتان)
+    // ==============================================================
     window.addEventListener('DOMContentLoaded', function() {
-        // الحالة الأولى: إذا كان مخزناً في المتصفح أنه دفع سابقاً
+        // الطبقة الأولى: localStorage
         if (localStorage.getItem('course_paid') === 'true') {
             showSuccessLink();
             return;
         }
 
-        // الحالة الثانية: إذا رجعت بوابة الدفع العميل إلى هنا مع علامة النجاح
+        // الطبقة الثانية: بارامتر payment=success في الرابط (من return_url)
         const params = new URLSearchParams(window.location.search);
         if (params.get('payment') === 'success') {
             showSuccessLink();
-            // ننظف الرابط من علامة الاستفهام عشان يبقى شكله نظيف
+            // ننظف الرابط من البارامترات عشان يبقى شكله نظيف
             window.history.replaceState({}, document.title, window.location.pathname);
         }
     });
 
-    // ============================================================
-    // 4. زر الدفع (الحدث عند النقر)
-    // ============================================================
-    document.getElementById("payBtn").addEventListener("click", function () {
+    // ==============================================================
+    // 5. زر الدفع (الحدث الرئيسي)
+    // ==============================================================
+    document.getElementById("payBtn").addEventListener("click", function() {
         window.TekramPay.checkout({
             amount: AMOUNT,
             seller: SELLER_ID,
             desc: "تدريب خاص سوشال ميديا",
 
-            // 🔥 الحل المضمون رقم 1: إجبار البوابة على إعادة التوجيه إلى هذه الصفحة مع بارامتر النجاح
+            // 🔥 الحل المضمون 1: إعادة التوجيه إلى هذه الصفحة مع بارامتر النجاح
             return_url: window.location.origin + window.location.pathname + '?payment=success',
 
-            // 🔥 الحل المضمون رقم 2: كود احتياطي لو ما تم التوجيه (شبكة أمان)
-            onSuccess: function (order) {
+            // 🔥 الحل المضمون 2: كود احتياطي (شبكة أمان)
+            onSuccess: function(order) {
                 alert("✅ تم الدفع بنجاح! رقم الطلب: " + (order?.id || "مكتمل"));
                 showSuccessLink();
                 window.open(TELEGRAM_URL, '_blank');
             },
 
-            onCancel: function () {
+            onCancel: function() {
                 console.log("تم إلغاء الدفع.");
-                // لو حابب تظهر رسالة للمستخدم: alert("تم إلغاء عملية الدفع");
+                // اختياري: تنبيه خفيف للمستخدم
+                // alert("تم إلغاء عملية الدفع.");
             }
         });
     });
